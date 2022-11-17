@@ -13,9 +13,7 @@ const Grid = styled.div`
   gap: 50px;
 `;
 
-const TemplateContent = styled.div`
-  background-color: white;
-`;
+const TemplateContent = styled.div``;
 const TemplateContentHeading = styled.h1`
   font-size: 50px;
   font-weight: 700;
