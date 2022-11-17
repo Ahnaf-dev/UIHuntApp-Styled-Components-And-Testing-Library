@@ -7,6 +7,7 @@ describe("Tabs Component", () => {
     beforeEach(() => {
       render(<Tabs />);
     });
+
     it("should render the relevant content", () => {
       const tab = screen.queryByText("Update Logs");
       fireEvent.click(tab);
@@ -14,10 +15,10 @@ describe("Tabs Component", () => {
         "Update Logs: New Content"
       );
     });
+
     it("should not render the relevant content", () => {
       const tab = screen.queryByText("Details");
       fireEvent.click(tab);
-
       expect(screen.queryByText("Update Logs: New Content")).not.toBeVisible();
     });
   });
